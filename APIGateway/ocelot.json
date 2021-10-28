@@ -1,0 +1,66 @@
+{
+  "ReRoutes": [
+
+    {
+      "DownstreamPathTemplate": "/api/Loan/Add",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 18660
+        }
+      ],
+      "UpstreamPathTemplate": "/loan/Add",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/registration/GetByUserName",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56951
+        }
+      ],
+      "UpstreamPathTemplate": "/registration/GetByUserName"
+      //"UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/registration/getbyId?Id={Id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56951
+        }
+      ],
+      "UpstreamPathTemplate": "/registration/getbyId?Id={Id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/registration/Add",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56951
+        }
+      ],
+      "UpstreamPathTemplate": "/registration/Add",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/registration/Update",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 56951
+        }
+      ],
+      "UpstreamPathTemplate": "/registration/Update",
+      "UpstreamHttpMethod": [ "PUT" ]
+    }
+  ]
+
+}
